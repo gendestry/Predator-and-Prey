@@ -62,8 +62,11 @@ void Board::updatePrey(Cell& first, Cell& next) {
 		reproduce = true;
 	}
 
-	if (next.type == Cell::NOTHING && reproduce) {
-		first.reproduce(next);
+	if (next.type == Cell::NOTHING) {
+		if(reproduce)
+			first.reproduce(next);
+		else 
+			first.move(next);
 	}
 }
 
