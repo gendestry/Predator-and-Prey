@@ -16,14 +16,14 @@ int main() {
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
 				window.close();
 			}
-			if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+			/*if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
 				sf::Vector2i localPosition = sf::Mouse::getPosition(window);
 				board.addCell(localPosition.x / CELL_SIZE, localPosition.y / CELL_SIZE, true);
 			}
 			if (sf::Mouse::isButtonPressed(sf::Mouse::Right)) {
 				sf::Vector2i localPosition = sf::Mouse::getPosition(window);
 				board.addCell(localPosition.x / CELL_SIZE, localPosition.y / CELL_SIZE, false);
-			}
+			}*/
 		}
 
 		window.clear();
